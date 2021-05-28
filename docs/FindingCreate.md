@@ -1,0 +1,78 @@
+# DefectDojo.Model.FindingCreate
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **int?** |  | [optional] 
+**Notes** | **List&lt;int?&gt;** |  | [optional] 
+**Test** | **int?** |  | 
+**ThreadId** | **int?** |  | [optional] 
+**FoundBy** | **List&lt;int?&gt;** |  | 
+**Url** | **string** |  | [optional] 
+**Tags** | **List&lt;string&gt;** |  | [optional] 
+**PushToJira** | **bool?** |  | [optional] [default to false]
+**Title** | **string** | A short description of the flaw. | 
+**Date** | **DateTime?** | The date the flaw was discovered. | [optional] 
+**SlaStartDate** | **DateTime?** | (readonly)The date used as start date for SLA calculation. Set by expiring risk acceptances. Empty by default, causing a fallback to &#39;date&#39;. | [optional] 
+**Cwe** | **int?** | The CWE number associated with this flaw. | [optional] 
+**Cve** | **string** | The Common Vulnerabilities and Exposures (CVE) associated with this flaw. | [optional] 
+**Cvssv3** | **string** | Common Vulnerability Scoring System version 3 (CVSSv3) score associated with this flaw. | [optional] 
+**Cvssv3Score** | **decimal?** | Numerical CVSSv3 score for the vulnerability. If the vector is given, the score is updated while saving the finding | [optional] 
+**Severity** | **string** | The severity level of this flaw (Critical, High, Medium, Low, Informational). | 
+**Description** | **string** | Longer more descriptive information about the flaw. | 
+**Mitigation** | **string** | Text describing how to best fix the flaw. | [optional] 
+**Impact** | **string** | Text describing the impact this flaw has on systems, products, enterprise, etc. | [optional] 
+**StepsToReproduce** | **string** | Text describing the steps that must be followed in order to reproduce the flaw / bug. | [optional] 
+**SeverityJustification** | **string** | Text describing why a certain severity was associated with this flaw. | [optional] 
+**References** | **string** | The external documentation available for this flaw. | [optional] 
+**IsTemplate** | **bool?** | Denotes if this finding is a template and can be reused. | [optional] 
+**Active** | **bool?** | Denotes if this flaw is active or not. | [optional] 
+**Verified** | **bool?** | Denotes if this flaw has been manually verified by the tester. | [optional] 
+**FalseP** | **bool?** | Denotes if this flaw has been deemed a false positive by the tester. | [optional] 
+**Duplicate** | **bool?** | Denotes if this flaw is a duplicate of other flaws reported. | [optional] 
+**OutOfScope** | **bool?** | Denotes if this flaw falls outside the scope of the test and/or engagement. | [optional] 
+**RiskAccepted** | **bool?** | Denotes if this finding has been marked as an accepted risk. | [optional] 
+**UnderReview** | **bool?** | Denotes is this flaw is currently being reviewed. | [optional] 
+**LastStatusUpdate** | **DateTime?** | Timestamp of latest status update (change in status related fields). | [optional] 
+**UnderDefectReview** | **bool?** | Denotes if this finding is under defect review. | [optional] 
+**IsMitigated** | **bool?** | Denotes if this flaw has been fixed. | [optional] 
+**Mitigated** | **DateTime?** | Denotes if this flaw has been fixed by storing the date it was fixed. | [optional] 
+**NumericalSeverity** | **string** | The numerical representation of the severity (S0, S1, S2, S3, S4). | 
+**LastReviewed** | **DateTime?** | Provides the date the flaw was last &#39;touched&#39; by a tester. | [optional] 
+**LineNumber** | **string** | Deprecated will be removed, use line | [optional] 
+**Sourcefilepath** | **string** | Filepath of the source code file in which the flaw is located. | [optional] 
+**Sourcefile** | **string** | Name of the source code file in which the flaw is located. | [optional] 
+**Param** | **string** | Parameter used to trigger the issue (DAST). | [optional] 
+**Payload** | **string** | Payload used to attack the service / application and trigger the bug / problem. | [optional] 
+**HashCode** | **string** | A hash over a configurable set of fields that is used for findings deduplication. | [optional] 
+**Line** | **int?** | Source line number of the attack vector. | [optional] 
+**FilePath** | **string** | Identified file(s) containing the flaw. | [optional] 
+**ComponentName** | **string** | Name of the affected component (library name, part of a system, ...). | [optional] 
+**ComponentVersion** | **string** | Version of the affected component. | [optional] 
+**StaticFinding** | **bool?** | Flaw has been detected from a Static Application Security Testing tool (SAST). | [optional] 
+**DynamicFinding** | **bool?** | Flaw has been detected from a Dynamic Application Security Testing tool (DAST). | [optional] 
+**Created** | **DateTime?** | The date the finding was created inside DefectDojo. | [optional] 
+**ScannerConfidence** | **int?** | Confidence level of vulnerability which is supplied by the scanner. | [optional] 
+**UniqueIdFromTool** | **string** | Vulnerability technical id from the source tool. Allows to track unique vulnerabilities. | [optional] 
+**VulnIdFromTool** | **string** | Non-unique technical id from the source tool associated with the vulnerability type. | [optional] 
+**SastSourceObject** | **string** | Source object (variable, function...) of the attack vector. | [optional] 
+**SastSinkObject** | **string** | Sink object (variable, function...) of the attack vector. | [optional] 
+**SastSourceLine** | **int?** | Source line number of the attack vector. | [optional] 
+**SastSourceFilePath** | **string** | Source file path of the attack vector. | [optional] 
+**NbOccurences** | **int?** | Number of occurences in the source tool when several vulnerabilites were found and aggregated by the scanner. | [optional] 
+**PublishDate** | **DateTime?** | Date when this vulnerability was made publicly available. | [optional] 
+**TagsFromDjangoTagging** | **string** | Temporary archive with tags from the previous tagging library we used | [optional] 
+**DuplicateFinding** | **int?** | Link to the original finding if this finding is a duplicate. | [optional] 
+**ReviewRequestedBy** | **int?** | Documents who requested a review for this finding. | [optional] 
+**DefectReviewRequestedBy** | **int?** | Documents who requested a defect review for this flaw. | [optional] 
+**MitigatedBy** | **int?** | Documents who has marked this flaw as fixed. | [optional] 
+**Reporter** | **int?** | Documents who reported the flaw. | [optional] 
+**LastReviewedBy** | **int?** | Provides the person who last reviewed the flaw. | [optional] 
+**SonarqubeIssue** | **int?** | The SonarQube issue associated with this finding. | [optional] 
+**Endpoints** | **List&lt;int?&gt;** | The hosts within the product that are susceptible to this flaw. | [optional] 
+**EndpointStatus** | **List&lt;int?&gt;** | The status of the endpoint associated with this flaw (Vulnerable, Mitigated, ...). | [optional] 
+**Reviewers** | **List&lt;int?&gt;** | Documents who reviewed the flaw. | [optional] 
+**Files** | **List&lt;int?&gt;** | Files(s) related to the flaw. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
