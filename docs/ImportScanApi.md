@@ -1,6 +1,6 @@
 # DefectDojo.Api.ImportScanApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="importscancreate"></a>
 # **ImportScanCreate**
-> ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+> ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
 
 
 
@@ -35,12 +35,12 @@ namespace Example
             var apiInstance = new ImportScanApi();
             var scanType = scanType_example;  // string | 
             var engagement = 56;  // int? | 
-            var scanDate = 2013-10-20;  // DateTime? |  (optional)  (default to 2021-05-28)
+            var scanDate = 2013-10-20;  // DateTime? |  (optional)  (default to 2021-05-31)
             var minimumSeverity = minimumSeverity_example;  // string |  (optional)  (default to Info)
             var active = true;  // bool? |  (optional)  (default to true)
             var verified = true;  // bool? |  (optional)  (default to true)
             var endpointToAdd = 56;  // int? |  (optional) 
-            var _file = new ModelFile(); // ModelFile |  (optional) 
+            var file = new System.IO.Stream(); // System.IO.Stream |  (optional) 
             var lead = 56;  // int? |  (optional) 
             var tags = new List<string>(); // List<string> |  (optional) 
             var closeOldFindings = true;  // bool? |  (optional)  (default to false)
@@ -53,7 +53,7 @@ namespace Example
 
             try
             {
-                ImportScan result = apiInstance.ImportScanCreate(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, _file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
+                ImportScan result = apiInstance.ImportScanCreate(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -71,12 +71,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **scanType** | **string**|  | 
  **engagement** | **int?**|  | 
- **scanDate** | **DateTime?**|  | [optional] [default to 2021-05-28]
+ **scanDate** | **DateTime?**|  | [optional] [default to 2021-05-31]
  **minimumSeverity** | **string**|  | [optional] [default to Info]
  **active** | **bool?**|  | [optional] [default to true]
  **verified** | **bool?**|  | [optional] [default to true]
  **endpointToAdd** | **int?**|  | [optional] 
- **_file** | **ModelFile**|  | [optional] 
+ **file** | **System.IO.Stream**|  | [optional] 
  **lead** | **int?**|  | [optional] 
  **tags** | [**List&lt;string&gt;**](string.md)|  | [optional] 
  **closeOldFindings** | **bool?**|  | [optional] [default to false]

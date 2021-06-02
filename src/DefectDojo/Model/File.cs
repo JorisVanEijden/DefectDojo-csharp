@@ -23,26 +23,26 @@ using SwaggerDateConverter = DefectDojo.Client.SwaggerDateConverter;
 namespace DefectDojo.Model
 {
     /// <summary>
-    /// ModelFile
+    /// File
     /// </summary>
     [DataContract]
-    public partial class ModelFile :  IEquatable<ModelFile>
+    public partial class File :  IEquatable<File>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ModelFile" /> class.
+        /// Initializes a new instance of the <see cref="File" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ModelFile() { }
+        protected File() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="ModelFile" /> class.
+        /// Initializes a new instance of the <see cref="File" /> class.
         /// </summary>
         /// <param name="title">title (required).</param>
-        public ModelFile(string title = default(string))
+        public File(string title = default(string))
         {
             // to ensure "title" is required (not null)
             if (title == null)
             {
-                throw new InvalidDataException("title is a required property for ModelFile and cannot be null");
+                throw new InvalidDataException("title is a required property for File and cannot be null");
             }
             else
             {
@@ -57,10 +57,10 @@ namespace DefectDojo.Model
         public int? Id { get; private set; }
 
         /// <summary>
-        /// Gets or Sets __File
+        /// Gets or Sets _File
         /// </summary>
         [DataMember(Name="file", EmitDefaultValue=false)]
-        public string __File { get; private set; }
+        public string _File { get; private set; }
 
         /// <summary>
         /// Gets or Sets Title
@@ -75,9 +75,9 @@ namespace DefectDojo.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ModelFile {\n");
+            sb.Append("class File {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  __File: ").Append(__File).Append("\n");
+            sb.Append("  _File: ").Append(_File).Append("\n");
             sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -99,15 +99,15 @@ namespace DefectDojo.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ModelFile);
+            return this.Equals(input as File);
         }
 
         /// <summary>
-        /// Returns true if ModelFile instances are equal
+        /// Returns true if File instances are equal
         /// </summary>
-        /// <param name="input">Instance of ModelFile to be compared</param>
+        /// <param name="input">Instance of File to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ModelFile input)
+        public bool Equals(File input)
         {
             if (input == null)
                 return false;
@@ -119,9 +119,9 @@ namespace DefectDojo.Model
                     this.Id.Equals(input.Id))
                 ) && 
                 (
-                    this.__File == input.__File ||
-                    (this.__File != null &&
-                    this.__File.Equals(input.__File))
+                    this._File == input._File ||
+                    (this._File != null &&
+                    this._File.Equals(input._File))
                 ) && 
                 (
                     this.Title == input.Title ||
@@ -141,8 +141,8 @@ namespace DefectDojo.Model
                 int hashCode = 41;
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.__File != null)
-                    hashCode = hashCode * 59 + this.__File.GetHashCode();
+                if (this._File != null)
+                    hashCode = hashCode * 59 + this._File.GetHashCode();
                 if (this.Title != null)
                     hashCode = hashCode * 59 + this.Title.GetHashCode();
                 return hashCode;

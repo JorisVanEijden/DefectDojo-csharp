@@ -38,7 +38,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -46,7 +46,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ReImportScan</returns>
-        ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
 
         /// <summary>
         /// 
@@ -62,7 +62,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -70,7 +70,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ApiResponse of ReImportScan</returns>
-        ApiResponse<ReImportScan> ReimportScanCreateWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        ApiResponse<ReImportScan> ReimportScanCreateWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -87,7 +87,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -95,7 +95,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ReImportScan</returns>
-        System.Threading.Tasks.Task<ReImportScan> ReimportScanCreateAsync (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        System.Threading.Tasks.Task<ReImportScan> ReimportScanCreateAsync (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
 
         /// <summary>
         /// 
@@ -111,7 +111,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -119,7 +119,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ApiResponse (ReImportScan)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ReImportScan>> ReimportScanCreateAsyncWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        System.Threading.Tasks.Task<ApiResponse<ReImportScan>> ReimportScanCreateAsyncWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
         #endregion Asynchronous Operations
     }
 
@@ -231,7 +231,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -239,9 +239,9 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ReImportScan</returns>
-        public ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
-             ApiResponse<ReImportScan> localVarResponse = ReimportScanCreateWithHttpInfo(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, _file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
+             ApiResponse<ReImportScan> localVarResponse = ReimportScanCreateWithHttpInfo(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
              return localVarResponse.Data;
         }
 
@@ -256,7 +256,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -264,7 +264,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ApiResponse of ReImportScan</returns>
-        public ApiResponse< ReImportScan > ReimportScanCreateWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public ApiResponse< ReImportScan > ReimportScanCreateWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
             // verify the required parameter 'scanDate' is set
             if (scanDate == null)
@@ -304,7 +304,7 @@ namespace DefectDojo.Api
             if (verified != null) localVarFormParams.Add("verified", this.Configuration.ApiClient.ParameterToString(verified)); // form parameter
             if (scanType != null) localVarFormParams.Add("scan_type", this.Configuration.ApiClient.ParameterToString(scanType)); // form parameter
             if (endpointToAdd != null) localVarFormParams.Add("endpoint_to_add", this.Configuration.ApiClient.ParameterToString(endpointToAdd)); // form parameter
-            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
             if (test != null) localVarFormParams.Add("test", this.Configuration.ApiClient.ParameterToString(test)); // form parameter
             if (pushToJira != null) localVarFormParams.Add("push_to_jira", this.Configuration.ApiClient.ParameterToString(pushToJira)); // form parameter
             if (closeOldFindings != null) localVarFormParams.Add("close_old_findings", this.Configuration.ApiClient.ParameterToString(closeOldFindings)); // form parameter
@@ -348,7 +348,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -356,9 +356,9 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ReImportScan</returns>
-        public async System.Threading.Tasks.Task<ReImportScan> ReimportScanCreateAsync (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public async System.Threading.Tasks.Task<ReImportScan> ReimportScanCreateAsync (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
-             ApiResponse<ReImportScan> localVarResponse = await ReimportScanCreateAsyncWithHttpInfo(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, _file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
+             ApiResponse<ReImportScan> localVarResponse = await ReimportScanCreateAsyncWithHttpInfo(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
              return localVarResponse.Data;
 
         }
@@ -374,7 +374,7 @@ namespace DefectDojo.Api
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="pushToJira"> (optional, default to false)</param>
         /// <param name="closeOldFindings"> (optional, default to true)</param>
         /// <param name="version"> (optional)</param>
@@ -382,7 +382,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ApiResponse (ReImportScan)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ReImportScan>> ReimportScanCreateAsyncWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ReImportScan>> ReimportScanCreateAsyncWithHttpInfo (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
             // verify the required parameter 'scanDate' is set
             if (scanDate == null)
@@ -422,7 +422,7 @@ namespace DefectDojo.Api
             if (verified != null) localVarFormParams.Add("verified", this.Configuration.ApiClient.ParameterToString(verified)); // form parameter
             if (scanType != null) localVarFormParams.Add("scan_type", this.Configuration.ApiClient.ParameterToString(scanType)); // form parameter
             if (endpointToAdd != null) localVarFormParams.Add("endpoint_to_add", this.Configuration.ApiClient.ParameterToString(endpointToAdd)); // form parameter
-            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
             if (test != null) localVarFormParams.Add("test", this.Configuration.ApiClient.ParameterToString(test)); // form parameter
             if (pushToJira != null) localVarFormParams.Add("push_to_jira", this.Configuration.ApiClient.ParameterToString(pushToJira)); // form parameter
             if (closeOldFindings != null) localVarFormParams.Add("close_old_findings", this.Configuration.ApiClient.ParameterToString(closeOldFindings)); // form parameter

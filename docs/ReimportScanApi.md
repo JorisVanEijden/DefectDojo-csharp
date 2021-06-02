@@ -1,6 +1,6 @@
 # DefectDojo.Api.ReimportScanApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="reimportscancreate"></a>
 # **ReimportScanCreate**
-> ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+> ReImportScan ReimportScanCreate (DateTime? scanDate, string scanType, int? test, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, bool? pushToJira = null, bool? closeOldFindings = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
 
 
 
@@ -40,7 +40,7 @@ namespace Example
             var active = true;  // bool? |  (optional)  (default to true)
             var verified = true;  // bool? |  (optional)  (default to true)
             var endpointToAdd = 56;  // int? |  (optional) 
-            var _file = new ModelFile(); // ModelFile |  (optional) 
+            var file = new System.IO.Stream(); // System.IO.Stream |  (optional) 
             var pushToJira = true;  // bool? |  (optional)  (default to false)
             var closeOldFindings = true;  // bool? |  (optional)  (default to true)
             var version = version_example;  // string |  (optional) 
@@ -50,7 +50,7 @@ namespace Example
 
             try
             {
-                ReImportScan result = apiInstance.ReimportScanCreate(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, _file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
+                ReImportScan result = apiInstance.ReimportScanCreate(scanDate, scanType, test, minimumSeverity, active, verified, endpointToAdd, file, pushToJira, closeOldFindings, version, buildId, branchTag, commitHash);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
  **active** | **bool?**|  | [optional] [default to true]
  **verified** | **bool?**|  | [optional] [default to true]
  **endpointToAdd** | **int?**|  | [optional] 
- **_file** | **ModelFile**|  | [optional] 
+ **file** | **System.IO.Stream**|  | [optional] 
  **pushToJira** | **bool?**|  | [optional] [default to false]
  **closeOldFindings** | **bool?**|  | [optional] [default to true]
  **version** | **string**|  | [optional] 

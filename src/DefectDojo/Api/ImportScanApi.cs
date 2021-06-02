@@ -33,12 +33,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -49,7 +49,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ImportScan</returns>
-        ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
 
         /// <summary>
         /// 
@@ -60,12 +60,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -76,7 +76,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ApiResponse of ImportScan</returns>
-        ApiResponse<ImportScan> ImportScanCreateWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        ApiResponse<ImportScan> ImportScanCreateWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -88,12 +88,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -104,7 +104,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ImportScan</returns>
-        System.Threading.Tasks.Task<ImportScan> ImportScanCreateAsync (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        System.Threading.Tasks.Task<ImportScan> ImportScanCreateAsync (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
 
         /// <summary>
         /// 
@@ -115,12 +115,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -131,7 +131,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ApiResponse (ImportScan)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ImportScan>> ImportScanCreateAsyncWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
+        System.Threading.Tasks.Task<ApiResponse<ImportScan>> ImportScanCreateAsyncWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null);
         #endregion Asynchronous Operations
     }
 
@@ -238,12 +238,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -254,9 +254,9 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ImportScan</returns>
-        public ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public ImportScan ImportScanCreate (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
-             ApiResponse<ImportScan> localVarResponse = ImportScanCreateWithHttpInfo(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, _file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
+             ApiResponse<ImportScan> localVarResponse = ImportScanCreateWithHttpInfo(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
              return localVarResponse.Data;
         }
 
@@ -266,12 +266,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -282,7 +282,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>ApiResponse of ImportScan</returns>
-        public ApiResponse< ImportScan > ImportScanCreateWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public ApiResponse< ImportScan > ImportScanCreateWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
             // verify the required parameter 'scanType' is set
             if (scanType == null)
@@ -319,7 +319,7 @@ namespace DefectDojo.Api
             if (verified != null) localVarFormParams.Add("verified", this.Configuration.ApiClient.ParameterToString(verified)); // form parameter
             if (scanType != null) localVarFormParams.Add("scan_type", this.Configuration.ApiClient.ParameterToString(scanType)); // form parameter
             if (endpointToAdd != null) localVarFormParams.Add("endpoint_to_add", this.Configuration.ApiClient.ParameterToString(endpointToAdd)); // form parameter
-            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
             if (engagement != null) localVarFormParams.Add("engagement", this.Configuration.ApiClient.ParameterToString(engagement)); // form parameter
             if (lead != null) localVarFormParams.Add("lead", this.Configuration.ApiClient.ParameterToString(lead)); // form parameter
             if (tags != null) localVarFormParams.Add("tags", this.Configuration.ApiClient.ParameterToString(tags)); // form parameter
@@ -361,12 +361,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -377,9 +377,9 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ImportScan</returns>
-        public async System.Threading.Tasks.Task<ImportScan> ImportScanCreateAsync (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public async System.Threading.Tasks.Task<ImportScan> ImportScanCreateAsync (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
-             ApiResponse<ImportScan> localVarResponse = await ImportScanCreateAsyncWithHttpInfo(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, _file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
+             ApiResponse<ImportScan> localVarResponse = await ImportScanCreateAsyncWithHttpInfo(scanType, engagement, scanDate, minimumSeverity, active, verified, endpointToAdd, file, lead, tags, closeOldFindings, pushToJira, environment, version, buildId, branchTag, commitHash);
              return localVarResponse.Data;
 
         }
@@ -390,12 +390,12 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="scanType"></param>
         /// <param name="engagement"></param>
-        /// <param name="scanDate"> (optional, default to 2021-05-28)</param>
+        /// <param name="scanDate"> (optional, default to 2021-05-31)</param>
         /// <param name="minimumSeverity"> (optional, default to Info)</param>
         /// <param name="active"> (optional, default to true)</param>
         /// <param name="verified"> (optional, default to true)</param>
         /// <param name="endpointToAdd"> (optional)</param>
-        /// <param name="_file"> (optional)</param>
+        /// <param name="file"> (optional)</param>
         /// <param name="lead"> (optional)</param>
         /// <param name="tags"> (optional)</param>
         /// <param name="closeOldFindings"> (optional, default to false)</param>
@@ -406,7 +406,7 @@ namespace DefectDojo.Api
         /// <param name="branchTag"> (optional)</param>
         /// <param name="commitHash"> (optional)</param>
         /// <returns>Task of ApiResponse (ImportScan)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ImportScan>> ImportScanCreateAsyncWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, ModelFile _file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ImportScan>> ImportScanCreateAsyncWithHttpInfo (string scanType, int? engagement, DateTime? scanDate = null, string minimumSeverity = null, bool? active = null, bool? verified = null, int? endpointToAdd = null, System.IO.Stream file = null, int? lead = null, List<string> tags = null, bool? closeOldFindings = null, bool? pushToJira = null, string environment = null, string version = null, string buildId = null, string branchTag = null, string commitHash = null)
         {
             // verify the required parameter 'scanType' is set
             if (scanType == null)
@@ -443,7 +443,7 @@ namespace DefectDojo.Api
             if (verified != null) localVarFormParams.Add("verified", this.Configuration.ApiClient.ParameterToString(verified)); // form parameter
             if (scanType != null) localVarFormParams.Add("scan_type", this.Configuration.ApiClient.ParameterToString(scanType)); // form parameter
             if (endpointToAdd != null) localVarFormParams.Add("endpoint_to_add", this.Configuration.ApiClient.ParameterToString(endpointToAdd)); // form parameter
-            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
             if (engagement != null) localVarFormParams.Add("engagement", this.Configuration.ApiClient.ParameterToString(engagement)); // form parameter
             if (lead != null) localVarFormParams.Add("lead", this.Configuration.ApiClient.ParameterToString(lead)); // form parameter
             if (tags != null) localVarFormParams.Add("tags", this.Configuration.ApiClient.ParameterToString(tags)); // form parameter
