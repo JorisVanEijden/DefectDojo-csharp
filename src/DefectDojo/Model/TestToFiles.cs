@@ -38,7 +38,7 @@ namespace DefectDojo.Model
         /// </summary>
         /// <param name="testId">testId (required).</param>
         /// <param name="files">files (required).</param>
-        public TestToFiles(int? testId = default(int?), List<ModelFile> files = default(List<ModelFile>))
+        public TestToFiles(int? testId = default(int?), List<System.IO.Stream> files = default(List<System.IO.Stream>))
         {
             // to ensure "testId" is required (not null)
             if (testId == null)
@@ -70,7 +70,7 @@ namespace DefectDojo.Model
         /// Gets or Sets Files
         /// </summary>
         [DataMember(Name="files", EmitDefaultValue=false)]
-        public List<ModelFile> Files { get; set; }
+        public List<System.IO.Stream> Files { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

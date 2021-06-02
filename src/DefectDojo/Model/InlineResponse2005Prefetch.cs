@@ -94,7 +94,7 @@ namespace DefectDojo.Model
         /// Gets or Sets Files
         /// </summary>
         [DataMember(Name="files", EmitDefaultValue=false)]
-        public Dictionary<string, ModelFile> Files { get; private set; }
+        public Dictionary<string, System.IO.Stream> Files { get; private set; }
 
         /// <summary>
         /// Gets or Sets FindingGroupSet

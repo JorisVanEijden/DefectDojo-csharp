@@ -53,13 +53,13 @@ namespace DefectDojo.Client
         public ApiClient()
         {
             Configuration = DefectDojo.Client.Configuration.Default;
-            RestClient = new RestClient("https://defectdojo.office.oneshoe.nl/api/v2");
+            RestClient = new RestClient("https://localhost:8080/api/v2");
             RestClient.IgnoreResponseStatusCode = true;
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://defectdojo.office.oneshoe.nl/api/v2).
+        /// with default base path (https://localhost:8080/api/v2).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
@@ -75,7 +75,7 @@ namespace DefectDojo.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://defectdojo.office.oneshoe.nl/api/v2")
+        public ApiClient(String basePath = "https://localhost:8080/api/v2")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");

@@ -73,10 +73,17 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 EndpointStatusList (int? limit = null, int? offset = null);
+        InlineResponse2001 EndpointStatusList (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null);
 
         /// <summary>
         /// 
@@ -85,10 +92,17 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> EndpointStatusListWithHttpInfo (int? limit = null, int? offset = null);
+        ApiResponse<InlineResponse2001> EndpointStatusListWithHttpInfo (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null);
         /// <summary>
         /// 
         /// </summary>
@@ -207,10 +221,17 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> EndpointStatusListAsync (int? limit = null, int? offset = null);
+        System.Threading.Tasks.Task<InlineResponse2001> EndpointStatusListAsync (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null);
 
         /// <summary>
         /// 
@@ -219,10 +240,17 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> EndpointStatusListAsyncWithHttpInfo (int? limit = null, int? offset = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> EndpointStatusListAsyncWithHttpInfo (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null);
         /// <summary>
         /// 
         /// </summary>
@@ -696,12 +724,19 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 EndpointStatusList (int? limit = null, int? offset = null)
+        public InlineResponse2001 EndpointStatusList (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = EndpointStatusListWithHttpInfo(limit, offset);
+             ApiResponse<InlineResponse2001> localVarResponse = EndpointStatusListWithHttpInfo(mitigated, falsePositive, outOfScope, riskAccepted, mitigatedBy, finding, endpoint, limit, offset);
              return localVarResponse.Data;
         }
 
@@ -709,10 +744,17 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse< InlineResponse2001 > EndpointStatusListWithHttpInfo (int? limit = null, int? offset = null)
+        public ApiResponse< InlineResponse2001 > EndpointStatusListWithHttpInfo (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null)
         {
 
             var localVarPath = "./endpoint_status/";
@@ -737,6 +779,13 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (mitigated != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "mitigated", mitigated)); // query parameter
+            if (falsePositive != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "false_positive", falsePositive)); // query parameter
+            if (outOfScope != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "out_of_scope", outOfScope)); // query parameter
+            if (riskAccepted != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "risk_accepted", riskAccepted)); // query parameter
+            if (mitigatedBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "mitigated_by", mitigatedBy)); // query parameter
+            if (finding != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "finding", finding)); // query parameter
+            if (endpoint != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "endpoint", endpoint)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
 
@@ -768,12 +817,19 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> EndpointStatusListAsync (int? limit = null, int? offset = null)
+        public async System.Threading.Tasks.Task<InlineResponse2001> EndpointStatusListAsync (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await EndpointStatusListAsyncWithHttpInfo(limit, offset);
+             ApiResponse<InlineResponse2001> localVarResponse = await EndpointStatusListAsyncWithHttpInfo(mitigated, falsePositive, outOfScope, riskAccepted, mitigatedBy, finding, endpoint, limit, offset);
              return localVarResponse.Data;
 
         }
@@ -782,10 +838,17 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="mitigated"> (optional)</param>
+        /// <param name="falsePositive"> (optional)</param>
+        /// <param name="outOfScope"> (optional)</param>
+        /// <param name="riskAccepted"> (optional)</param>
+        /// <param name="mitigatedBy"> (optional)</param>
+        /// <param name="finding"> (optional)</param>
+        /// <param name="endpoint"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> EndpointStatusListAsyncWithHttpInfo (int? limit = null, int? offset = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> EndpointStatusListAsyncWithHttpInfo (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null)
         {
 
             var localVarPath = "./endpoint_status/";
@@ -810,6 +873,13 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (mitigated != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "mitigated", mitigated)); // query parameter
+            if (falsePositive != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "false_positive", falsePositive)); // query parameter
+            if (outOfScope != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "out_of_scope", outOfScope)); // query parameter
+            if (riskAccepted != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "risk_accepted", riskAccepted)); // query parameter
+            if (mitigatedBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "mitigated_by", mitigatedBy)); // query parameter
+            if (finding != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "finding", finding)); // query parameter
+            if (endpoint != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "endpoint", endpoint)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
 

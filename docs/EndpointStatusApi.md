@@ -1,6 +1,6 @@
 # DefectDojo.Api.EndpointStatusApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -139,7 +139,7 @@ void (empty response body)
 
 <a name="endpointstatuslist"></a>
 # **EndpointStatusList**
-> InlineResponse2001 EndpointStatusList (int? limit = null, int? offset = null)
+> InlineResponse2001 EndpointStatusList (string mitigated = null, string falsePositive = null, string outOfScope = null, string riskAccepted = null, string mitigatedBy = null, string finding = null, string endpoint = null, int? limit = null, int? offset = null)
 
 
 
@@ -163,12 +163,19 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new EndpointStatusApi();
+            var mitigated = mitigated_example;  // string |  (optional) 
+            var falsePositive = falsePositive_example;  // string |  (optional) 
+            var outOfScope = outOfScope_example;  // string |  (optional) 
+            var riskAccepted = riskAccepted_example;  // string |  (optional) 
+            var mitigatedBy = mitigatedBy_example;  // string |  (optional) 
+            var finding = finding_example;  // string |  (optional) 
+            var endpoint = endpoint_example;  // string |  (optional) 
             var limit = 56;  // int? | Number of results to return per page. (optional) 
             var offset = 56;  // int? | The initial index from which to return the results. (optional) 
 
             try
             {
-                InlineResponse2001 result = apiInstance.EndpointStatusList(limit, offset);
+                InlineResponse2001 result = apiInstance.EndpointStatusList(mitigated, falsePositive, outOfScope, riskAccepted, mitigatedBy, finding, endpoint, limit, offset);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -184,6 +191,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mitigated** | **string**|  | [optional] 
+ **falsePositive** | **string**|  | [optional] 
+ **outOfScope** | **string**|  | [optional] 
+ **riskAccepted** | **string**|  | [optional] 
+ **mitigatedBy** | **string**|  | [optional] 
+ **finding** | **string**|  | [optional] 
+ **endpoint** | **string**|  | [optional] 
  **limit** | **int?**| Number of results to return per page. | [optional] 
  **offset** | **int?**| The initial index from which to return the results. | [optional] 
 

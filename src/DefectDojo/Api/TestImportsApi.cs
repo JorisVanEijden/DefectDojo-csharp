@@ -52,11 +52,20 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>InlineResponse20024</returns>
-        InlineResponse20024 TestImportsList (int? limit = null, int? offset = null, List<string> prefetch = null);
+        InlineResponse20024 TestImportsList (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null);
 
         /// <summary>
         /// 
@@ -65,11 +74,20 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>ApiResponse of InlineResponse20024</returns>
-        ApiResponse<InlineResponse20024> TestImportsListWithHttpInfo (int? limit = null, int? offset = null, List<string> prefetch = null);
+        ApiResponse<InlineResponse20024> TestImportsListWithHttpInfo (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null);
         /// <summary>
         /// 
         /// </summary>
@@ -123,11 +141,20 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>Task of InlineResponse20024</returns>
-        System.Threading.Tasks.Task<InlineResponse20024> TestImportsListAsync (int? limit = null, int? offset = null, List<string> prefetch = null);
+        System.Threading.Tasks.Task<InlineResponse20024> TestImportsListAsync (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null);
 
         /// <summary>
         /// 
@@ -136,11 +163,20 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20024)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> TestImportsListAsyncWithHttpInfo (int? limit = null, int? offset = null, List<string> prefetch = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> TestImportsListAsyncWithHttpInfo (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null);
         /// <summary>
         /// 
         /// </summary>
@@ -411,13 +447,22 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>InlineResponse20024</returns>
-        public InlineResponse20024 TestImportsList (int? limit = null, int? offset = null, List<string> prefetch = null)
+        public InlineResponse20024 TestImportsList (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
         {
-             ApiResponse<InlineResponse20024> localVarResponse = TestImportsListWithHttpInfo(limit, offset, prefetch);
+             ApiResponse<InlineResponse20024> localVarResponse = TestImportsListWithHttpInfo(test, findingsAffected, version, branchTag, buildId, commitHash, testImportFindingActionAction, testImportFindingActionFinding, testImportFindingActionCreated, limit, offset, prefetch);
              return localVarResponse.Data;
         }
 
@@ -425,11 +470,20 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>ApiResponse of InlineResponse20024</returns>
-        public ApiResponse< InlineResponse20024 > TestImportsListWithHttpInfo (int? limit = null, int? offset = null, List<string> prefetch = null)
+        public ApiResponse< InlineResponse20024 > TestImportsListWithHttpInfo (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
         {
 
             var localVarPath = "./test_imports/";
@@ -454,6 +508,15 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (test != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test", test)); // query parameter
+            if (findingsAffected != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "findings_affected", findingsAffected)); // query parameter
+            if (version != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "version", version)); // query parameter
+            if (branchTag != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "branch_tag", branchTag)); // query parameter
+            if (buildId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "build_id", buildId)); // query parameter
+            if (commitHash != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "commit_hash", commitHash)); // query parameter
+            if (testImportFindingActionAction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__action", testImportFindingActionAction)); // query parameter
+            if (testImportFindingActionFinding != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__finding", testImportFindingActionFinding)); // query parameter
+            if (testImportFindingActionCreated != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__created", testImportFindingActionCreated)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
             if (prefetch != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("csv", "prefetch", prefetch)); // query parameter
@@ -486,13 +549,22 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>Task of InlineResponse20024</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20024> TestImportsListAsync (int? limit = null, int? offset = null, List<string> prefetch = null)
+        public async System.Threading.Tasks.Task<InlineResponse20024> TestImportsListAsync (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
         {
-             ApiResponse<InlineResponse20024> localVarResponse = await TestImportsListAsyncWithHttpInfo(limit, offset, prefetch);
+             ApiResponse<InlineResponse20024> localVarResponse = await TestImportsListAsyncWithHttpInfo(test, findingsAffected, version, branchTag, buildId, commitHash, testImportFindingActionAction, testImportFindingActionFinding, testImportFindingActionCreated, limit, offset, prefetch);
              return localVarResponse.Data;
 
         }
@@ -501,11 +573,20 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="test"> (optional)</param>
+        /// <param name="findingsAffected"> (optional)</param>
+        /// <param name="version"> (optional)</param>
+        /// <param name="branchTag"> (optional)</param>
+        /// <param name="buildId"> (optional)</param>
+        /// <param name="commitHash"> (optional)</param>
+        /// <param name="testImportFindingActionAction"> (optional)</param>
+        /// <param name="testImportFindingActionFinding"> (optional)</param>
+        /// <param name="testImportFindingActionCreated"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <param name="prefetch"> (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20024)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> TestImportsListAsyncWithHttpInfo (int? limit = null, int? offset = null, List<string> prefetch = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> TestImportsListAsyncWithHttpInfo (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
         {
 
             var localVarPath = "./test_imports/";
@@ -530,6 +611,15 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (test != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test", test)); // query parameter
+            if (findingsAffected != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "findings_affected", findingsAffected)); // query parameter
+            if (version != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "version", version)); // query parameter
+            if (branchTag != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "branch_tag", branchTag)); // query parameter
+            if (buildId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "build_id", buildId)); // query parameter
+            if (commitHash != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "commit_hash", commitHash)); // query parameter
+            if (testImportFindingActionAction != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__action", testImportFindingActionAction)); // query parameter
+            if (testImportFindingActionFinding != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__finding", testImportFindingActionFinding)); // query parameter
+            if (testImportFindingActionCreated != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "test_import_finding_action__created", testImportFindingActionCreated)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
             if (prefetch != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("csv", "prefetch", prefetch)); // query parameter

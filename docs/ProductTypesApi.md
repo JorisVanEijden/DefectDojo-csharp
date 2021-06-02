@@ -1,6 +1,6 @@
 # DefectDojo.Api.ProductTypesApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 <a name="producttypeslist"></a>
 # **ProductTypesList**
-> InlineResponse20013 ProductTypesList (int? limit = null, int? offset = null, List<string> prefetch = null)
+> InlineResponse20013 ProductTypesList (decimal? id = null, string name = null, string criticalProduct = null, string keyProduct = null, string created = null, string updated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
 
 
 
@@ -166,13 +166,19 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ProductTypesApi();
+            var id = 8.14;  // decimal? |  (optional) 
+            var name = name_example;  // string |  (optional) 
+            var criticalProduct = criticalProduct_example;  // string |  (optional) 
+            var keyProduct = keyProduct_example;  // string |  (optional) 
+            var created = created_example;  // string |  (optional) 
+            var updated = updated_example;  // string |  (optional) 
             var limit = 56;  // int? | Number of results to return per page. (optional) 
             var offset = 56;  // int? | The initial index from which to return the results. (optional) 
             var prefetch = prefetch_example;  // List<string> |  (optional) 
 
             try
             {
-                InlineResponse20013 result = apiInstance.ProductTypesList(limit, offset, prefetch);
+                InlineResponse20013 result = apiInstance.ProductTypesList(id, name, criticalProduct, keyProduct, created, updated, limit, offset, prefetch);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -188,6 +194,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **id** | **decimal?**|  | [optional] 
+ **name** | **string**|  | [optional] 
+ **criticalProduct** | **string**|  | [optional] 
+ **keyProduct** | **string**|  | [optional] 
+ **created** | **string**|  | [optional] 
+ **updated** | **string**|  | [optional] 
  **limit** | **int?**| Number of results to return per page. | [optional] 
  **offset** | **int?**| The initial index from which to return the results. | [optional] 
  **prefetch** | **List&lt;string&gt;**|  | [optional] 

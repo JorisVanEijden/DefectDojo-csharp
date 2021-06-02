@@ -42,7 +42,7 @@ Name | Type | Description | Notes
 **SourceCodeManagementServer** | **int?** | Source code server for CI/CD test | [optional] 
 **OrchestrationEngine** | **int?** | Orchestration service responsible for CI/CD test | [optional] 
 **Notes** | [**List&lt;Note&gt;**](Note.md) |  | [optional] 
-**Files** | [**List&lt;ModelFile&gt;**](ModelFile.md) |  | [optional] 
+**Files** | **List&lt;System.IO.Stream&gt;** |  | [optional] 
 **RiskAcceptance** | **List&lt;int?&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

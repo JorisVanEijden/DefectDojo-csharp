@@ -52,10 +52,15 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>InlineResponse20021</returns>
-        InlineResponse20021 StubFindingsList (int? limit = null, int? offset = null);
+        InlineResponse20021 StubFindingsList (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null);
 
         /// <summary>
         /// 
@@ -64,10 +69,15 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>ApiResponse of InlineResponse20021</returns>
-        ApiResponse<InlineResponse20021> StubFindingsListWithHttpInfo (int? limit = null, int? offset = null);
+        ApiResponse<InlineResponse20021> StubFindingsListWithHttpInfo (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null);
         /// <summary>
         /// 
         /// </summary>
@@ -165,10 +175,15 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of InlineResponse20021</returns>
-        System.Threading.Tasks.Task<InlineResponse20021> StubFindingsListAsync (int? limit = null, int? offset = null);
+        System.Threading.Tasks.Task<InlineResponse20021> StubFindingsListAsync (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null);
 
         /// <summary>
         /// 
@@ -177,10 +192,15 @@ namespace DefectDojo.Api
         /// 
         /// </remarks>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> StubFindingsListAsyncWithHttpInfo (int? limit = null, int? offset = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> StubFindingsListAsyncWithHttpInfo (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null);
         /// <summary>
         /// 
         /// </summary>
@@ -511,12 +531,17 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>InlineResponse20021</returns>
-        public InlineResponse20021 StubFindingsList (int? limit = null, int? offset = null)
+        public InlineResponse20021 StubFindingsList (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null)
         {
-             ApiResponse<InlineResponse20021> localVarResponse = StubFindingsListWithHttpInfo(limit, offset);
+             ApiResponse<InlineResponse20021> localVarResponse = StubFindingsListWithHttpInfo(id, title, date, severity, description, limit, offset);
              return localVarResponse.Data;
         }
 
@@ -524,10 +549,15 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>ApiResponse of InlineResponse20021</returns>
-        public ApiResponse< InlineResponse20021 > StubFindingsListWithHttpInfo (int? limit = null, int? offset = null)
+        public ApiResponse< InlineResponse20021 > StubFindingsListWithHttpInfo (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null)
         {
 
             var localVarPath = "./stub_findings/";
@@ -552,6 +582,11 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (id != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "id", id)); // query parameter
+            if (title != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "title", title)); // query parameter
+            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
+            if (severity != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "severity", severity)); // query parameter
+            if (description != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "description", description)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
 
@@ -583,12 +618,17 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of InlineResponse20021</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20021> StubFindingsListAsync (int? limit = null, int? offset = null)
+        public async System.Threading.Tasks.Task<InlineResponse20021> StubFindingsListAsync (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null)
         {
-             ApiResponse<InlineResponse20021> localVarResponse = await StubFindingsListAsyncWithHttpInfo(limit, offset);
+             ApiResponse<InlineResponse20021> localVarResponse = await StubFindingsListAsyncWithHttpInfo(id, title, date, severity, description, limit, offset);
              return localVarResponse.Data;
 
         }
@@ -597,10 +637,15 @@ namespace DefectDojo.Api
         ///  
         /// </summary>
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"> (optional)</param>
+        /// <param name="title"> (optional)</param>
+        /// <param name="date"> (optional)</param>
+        /// <param name="severity"> (optional)</param>
+        /// <param name="description"> (optional)</param>
         /// <param name="limit">Number of results to return per page. (optional)</param>
         /// <param name="offset">The initial index from which to return the results. (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> StubFindingsListAsyncWithHttpInfo (int? limit = null, int? offset = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> StubFindingsListAsyncWithHttpInfo (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null)
         {
 
             var localVarPath = "./stub_findings/";
@@ -625,6 +670,11 @@ namespace DefectDojo.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (id != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "id", id)); // query parameter
+            if (title != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "title", title)); // query parameter
+            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
+            if (severity != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "severity", severity)); // query parameter
+            if (description != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "description", description)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (offset != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "offset", offset)); // query parameter
 

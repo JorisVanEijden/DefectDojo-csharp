@@ -1,6 +1,6 @@
 # DefectDojo.Api.StubFindingsApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 <a name="stubfindingslist"></a>
 # **StubFindingsList**
-> InlineResponse20021 StubFindingsList (int? limit = null, int? offset = null)
+> InlineResponse20021 StubFindingsList (decimal? id = null, string title = null, string date = null, string severity = null, string description = null, int? limit = null, int? offset = null)
 
 
 
@@ -100,12 +100,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new StubFindingsApi();
+            var id = 8.14;  // decimal? |  (optional) 
+            var title = title_example;  // string |  (optional) 
+            var date = date_example;  // string |  (optional) 
+            var severity = severity_example;  // string |  (optional) 
+            var description = description_example;  // string |  (optional) 
             var limit = 56;  // int? | Number of results to return per page. (optional) 
             var offset = 56;  // int? | The initial index from which to return the results. (optional) 
 
             try
             {
-                InlineResponse20021 result = apiInstance.StubFindingsList(limit, offset);
+                InlineResponse20021 result = apiInstance.StubFindingsList(id, title, date, severity, description, limit, offset);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -121,6 +126,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **id** | **decimal?**|  | [optional] 
+ **title** | **string**|  | [optional] 
+ **date** | **string**|  | [optional] 
+ **severity** | **string**|  | [optional] 
+ **description** | **string**|  | [optional] 
  **limit** | **int?**| Number of results to return per page. | [optional] 
  **offset** | **int?**| The initial index from which to return the results. | [optional] 
 

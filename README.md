@@ -74,7 +74,7 @@ namespace Example
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -366,13 +366,13 @@ Class | Method | HTTP request | Description
  - [Model.JIRAIssue](docs/JIRAIssue.md)
  - [Model.JIRAProject](docs/JIRAProject.md)
  - [Model.Meta](docs/Meta.md)
- - [Model.ModelFile](docs/ModelFile.md)
  - [Model.Note](docs/Note.md)
  - [Model.NoteHistory](docs/NoteHistory.md)
  - [Model.NoteType](docs/NoteType.md)
  - [Model.Product](docs/Product.md)
  - [Model.ProductMeta](docs/ProductMeta.md)
  - [Model.ProductType](docs/ProductType.md)
+ - [Model.File](docs/File.md)
  - [Model.ReImportScan](docs/ReImportScan.md)
  - [Model.Regulation](docs/Regulation.md)
  - [Model.ReportGenerate](docs/ReportGenerate.md)

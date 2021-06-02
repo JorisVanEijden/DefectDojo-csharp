@@ -1,6 +1,6 @@
 # DefectDojo.Api.JiraProjectsApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

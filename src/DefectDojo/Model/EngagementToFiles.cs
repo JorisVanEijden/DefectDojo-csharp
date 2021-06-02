@@ -38,7 +38,7 @@ namespace DefectDojo.Model
         /// </summary>
         /// <param name="engagementId">engagementId (required).</param>
         /// <param name="files">files (required).</param>
-        public EngagementToFiles(int? engagementId = default(int?), List<ModelFile> files = default(List<ModelFile>))
+        public EngagementToFiles(int? engagementId = default(int?), List<System.IO.Stream> files = default(List<System.IO.Stream>))
         {
             // to ensure "engagementId" is required (not null)
             if (engagementId == null)
@@ -70,7 +70,7 @@ namespace DefectDojo.Model
         /// Gets or Sets Files
         /// </summary>
         [DataMember(Name="files", EmitDefaultValue=false)]
-        public List<ModelFile> Files { get; set; }
+        public List<System.IO.Stream> Files { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

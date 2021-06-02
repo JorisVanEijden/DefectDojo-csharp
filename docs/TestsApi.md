@@ -1,6 +1,6 @@
 # DefectDojo.Api.TestsApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -212,7 +212,7 @@ void (empty response body)
 
 <a name="testsfilescreate"></a>
 # **TestsFilesCreate**
-> ModelFile TestsFilesCreate (int? id, AddNewFileOption data)
+> System.IO.Stream TestsFilesCreate (int? id, AddNewFileOption data)
 
 
 
@@ -241,7 +241,7 @@ namespace Example
 
             try
             {
-                ModelFile result = apiInstance.TestsFilesCreate(id, data);
+                System.IO.Stream result = apiInstance.TestsFilesCreate(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelFile**](ModelFile.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 <a name="testsfilespartialupdate"></a>
 # **TestsFilesPartialUpdate**
-> ModelFile TestsFilesPartialUpdate (int? id, AddNewFileOption data)
+> System.IO.Stream TestsFilesPartialUpdate (int? id, AddNewFileOption data)
 
 
 
@@ -306,7 +306,7 @@ namespace Example
 
             try
             {
-                ModelFile result = apiInstance.TestsFilesPartialUpdate(id, data);
+                System.IO.Stream result = apiInstance.TestsFilesPartialUpdate(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelFile**](ModelFile.md)
+**System.IO.Stream**
 
 ### Authorization
 

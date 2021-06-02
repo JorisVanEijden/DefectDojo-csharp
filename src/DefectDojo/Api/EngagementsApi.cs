@@ -119,8 +119,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ModelFile</returns>
-        ModelFile EngagementsFilesCreate (int? id, AddNewFileOption data);
+        /// <returns>System.IO.Stream</returns>
+        System.IO.Stream EngagementsFilesCreate (int? id, AddNewFileOption data);
 
         /// <summary>
         /// 
@@ -131,8 +131,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ApiResponse of ModelFile</returns>
-        ApiResponse<ModelFile> EngagementsFilesCreateWithHttpInfo (int? id, AddNewFileOption data);
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        ApiResponse<System.IO.Stream> EngagementsFilesCreateWithHttpInfo (int? id, AddNewFileOption data);
         /// <summary>
         /// 
         /// </summary>
@@ -142,8 +142,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ModelFile</returns>
-        ModelFile EngagementsFilesPartialUpdate (int? id, AddNewFileOption data);
+        /// <returns>System.IO.Stream</returns>
+        System.IO.Stream EngagementsFilesPartialUpdate (int? id, AddNewFileOption data);
 
         /// <summary>
         /// 
@@ -154,8 +154,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ApiResponse of ModelFile</returns>
-        ApiResponse<ModelFile> EngagementsFilesPartialUpdateWithHttpInfo (int? id, AddNewFileOption data);
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        ApiResponse<System.IO.Stream> EngagementsFilesPartialUpdateWithHttpInfo (int? id, AddNewFileOption data);
         /// <summary>
         /// 
         /// </summary>
@@ -509,8 +509,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ModelFile</returns>
-        System.Threading.Tasks.Task<ModelFile> EngagementsFilesCreateAsync (int? id, AddNewFileOption data);
+        /// <returns>Task of System.IO.Stream</returns>
+        System.Threading.Tasks.Task<System.IO.Stream> EngagementsFilesCreateAsync (int? id, AddNewFileOption data);
 
         /// <summary>
         /// 
@@ -521,8 +521,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ApiResponse (ModelFile)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ModelFile>> EngagementsFilesCreateAsyncWithHttpInfo (int? id, AddNewFileOption data);
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> EngagementsFilesCreateAsyncWithHttpInfo (int? id, AddNewFileOption data);
         /// <summary>
         /// 
         /// </summary>
@@ -532,8 +532,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ModelFile</returns>
-        System.Threading.Tasks.Task<ModelFile> EngagementsFilesPartialUpdateAsync (int? id, AddNewFileOption data);
+        /// <returns>Task of System.IO.Stream</returns>
+        System.Threading.Tasks.Task<System.IO.Stream> EngagementsFilesPartialUpdateAsync (int? id, AddNewFileOption data);
 
         /// <summary>
         /// 
@@ -544,8 +544,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ApiResponse (ModelFile)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ModelFile>> EngagementsFilesPartialUpdateAsyncWithHttpInfo (int? id, AddNewFileOption data);
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> EngagementsFilesPartialUpdateAsyncWithHttpInfo (int? id, AddNewFileOption data);
         /// <summary>
         /// 
         /// </summary>
@@ -1524,10 +1524,10 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ModelFile</returns>
-        public ModelFile EngagementsFilesCreate (int? id, AddNewFileOption data)
+        /// <returns>System.IO.Stream</returns>
+        public System.IO.Stream EngagementsFilesCreate (int? id, AddNewFileOption data)
         {
-             ApiResponse<ModelFile> localVarResponse = EngagementsFilesCreateWithHttpInfo(id, data);
+             ApiResponse<System.IO.Stream> localVarResponse = EngagementsFilesCreateWithHttpInfo(id, data);
              return localVarResponse.Data;
         }
 
@@ -1537,8 +1537,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ApiResponse of ModelFile</returns>
-        public ApiResponse< ModelFile > EngagementsFilesCreateWithHttpInfo (int? id, AddNewFileOption data)
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        public ApiResponse< System.IO.Stream > EngagementsFilesCreateWithHttpInfo (int? id, AddNewFileOption data)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -1598,9 +1598,9 @@ namespace DefectDojo.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ModelFile>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (ModelFile) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModelFile)));
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>
@@ -1609,10 +1609,10 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ModelFile</returns>
-        public async System.Threading.Tasks.Task<ModelFile> EngagementsFilesCreateAsync (int? id, AddNewFileOption data)
+        /// <returns>Task of System.IO.Stream</returns>
+        public async System.Threading.Tasks.Task<System.IO.Stream> EngagementsFilesCreateAsync (int? id, AddNewFileOption data)
         {
-             ApiResponse<ModelFile> localVarResponse = await EngagementsFilesCreateAsyncWithHttpInfo(id, data);
+             ApiResponse<System.IO.Stream> localVarResponse = await EngagementsFilesCreateAsyncWithHttpInfo(id, data);
              return localVarResponse.Data;
 
         }
@@ -1623,8 +1623,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ApiResponse (ModelFile)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ModelFile>> EngagementsFilesCreateAsyncWithHttpInfo (int? id, AddNewFileOption data)
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> EngagementsFilesCreateAsyncWithHttpInfo (int? id, AddNewFileOption data)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -1684,9 +1684,9 @@ namespace DefectDojo.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ModelFile>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (ModelFile) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModelFile)));
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>
@@ -1695,10 +1695,10 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ModelFile</returns>
-        public ModelFile EngagementsFilesPartialUpdate (int? id, AddNewFileOption data)
+        /// <returns>System.IO.Stream</returns>
+        public System.IO.Stream EngagementsFilesPartialUpdate (int? id, AddNewFileOption data)
         {
-             ApiResponse<ModelFile> localVarResponse = EngagementsFilesPartialUpdateWithHttpInfo(id, data);
+             ApiResponse<System.IO.Stream> localVarResponse = EngagementsFilesPartialUpdateWithHttpInfo(id, data);
              return localVarResponse.Data;
         }
 
@@ -1708,8 +1708,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>ApiResponse of ModelFile</returns>
-        public ApiResponse< ModelFile > EngagementsFilesPartialUpdateWithHttpInfo (int? id, AddNewFileOption data)
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        public ApiResponse< System.IO.Stream > EngagementsFilesPartialUpdateWithHttpInfo (int? id, AddNewFileOption data)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -1769,9 +1769,9 @@ namespace DefectDojo.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ModelFile>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (ModelFile) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModelFile)));
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>
@@ -1780,10 +1780,10 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ModelFile</returns>
-        public async System.Threading.Tasks.Task<ModelFile> EngagementsFilesPartialUpdateAsync (int? id, AddNewFileOption data)
+        /// <returns>Task of System.IO.Stream</returns>
+        public async System.Threading.Tasks.Task<System.IO.Stream> EngagementsFilesPartialUpdateAsync (int? id, AddNewFileOption data)
         {
-             ApiResponse<ModelFile> localVarResponse = await EngagementsFilesPartialUpdateAsyncWithHttpInfo(id, data);
+             ApiResponse<System.IO.Stream> localVarResponse = await EngagementsFilesPartialUpdateAsyncWithHttpInfo(id, data);
              return localVarResponse.Data;
 
         }
@@ -1794,8 +1794,8 @@ namespace DefectDojo.Api
         /// <exception cref="DefectDojo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">A unique integer value identifying this engagement.</param>
         /// <param name="data"></param>
-        /// <returns>Task of ApiResponse (ModelFile)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ModelFile>> EngagementsFilesPartialUpdateAsyncWithHttpInfo (int? id, AddNewFileOption data)
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> EngagementsFilesPartialUpdateAsyncWithHttpInfo (int? id, AddNewFileOption data)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -1855,9 +1855,9 @@ namespace DefectDojo.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ModelFile>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (ModelFile) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ModelFile)));
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 # DefectDojo.Api.MetadataApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -139,7 +139,7 @@ void (empty response body)
 
 <a name="metadatalist"></a>
 # **MetadataList**
-> InlineResponse20010 MetadataList (int? limit = null, int? offset = null)
+> InlineResponse20010 MetadataList (decimal? id = null, string product = null, string endpoint = null, string name = null, string finding = null, int? limit = null, int? offset = null)
 
 
 
@@ -163,12 +163,17 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new MetadataApi();
+            var id = 8.14;  // decimal? |  (optional) 
+            var product = product_example;  // string |  (optional) 
+            var endpoint = endpoint_example;  // string |  (optional) 
+            var name = name_example;  // string |  (optional) 
+            var finding = finding_example;  // string |  (optional) 
             var limit = 56;  // int? | Number of results to return per page. (optional) 
             var offset = 56;  // int? | The initial index from which to return the results. (optional) 
 
             try
             {
-                InlineResponse20010 result = apiInstance.MetadataList(limit, offset);
+                InlineResponse20010 result = apiInstance.MetadataList(id, product, endpoint, name, finding, limit, offset);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -184,6 +189,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **id** | **decimal?**|  | [optional] 
+ **product** | **string**|  | [optional] 
+ **endpoint** | **string**|  | [optional] 
+ **name** | **string**|  | [optional] 
+ **finding** | **string**|  | [optional] 
  **limit** | **int?**| Number of results to return per page. | [optional] 
  **offset** | **int?**| The initial index from which to return the results. | [optional] 
 

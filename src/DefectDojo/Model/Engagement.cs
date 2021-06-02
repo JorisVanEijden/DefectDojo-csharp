@@ -447,7 +447,7 @@ namespace DefectDojo.Model
         /// Gets or Sets Files
         /// </summary>
         [DataMember(Name="files", EmitDefaultValue=false)]
-        public List<ModelFile> Files { get; private set; }
+        public List<System.IO.Stream> Files { get; private set; }
 
         /// <summary>
         /// Gets or Sets RiskAcceptance

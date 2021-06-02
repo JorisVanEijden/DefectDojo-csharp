@@ -1,6 +1,6 @@
 # DefectDojo.Api.TestImportsApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -73,7 +73,7 @@ void (empty response body)
 
 <a name="testimportslist"></a>
 # **TestImportsList**
-> InlineResponse20024 TestImportsList (int? limit = null, int? offset = null, List<string> prefetch = null)
+> InlineResponse20024 TestImportsList (string test = null, string findingsAffected = null, string version = null, string branchTag = null, string buildId = null, string commitHash = null, string testImportFindingActionAction = null, string testImportFindingActionFinding = null, string testImportFindingActionCreated = null, int? limit = null, int? offset = null, List<string> prefetch = null)
 
 
 
@@ -97,13 +97,22 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new TestImportsApi();
+            var test = test_example;  // string |  (optional) 
+            var findingsAffected = findingsAffected_example;  // string |  (optional) 
+            var version = version_example;  // string |  (optional) 
+            var branchTag = branchTag_example;  // string |  (optional) 
+            var buildId = buildId_example;  // string |  (optional) 
+            var commitHash = commitHash_example;  // string |  (optional) 
+            var testImportFindingActionAction = testImportFindingActionAction_example;  // string |  (optional) 
+            var testImportFindingActionFinding = testImportFindingActionFinding_example;  // string |  (optional) 
+            var testImportFindingActionCreated = testImportFindingActionCreated_example;  // string |  (optional) 
             var limit = 56;  // int? | Number of results to return per page. (optional) 
             var offset = 56;  // int? | The initial index from which to return the results. (optional) 
             var prefetch = prefetch_example;  // List<string> |  (optional) 
 
             try
             {
-                InlineResponse20024 result = apiInstance.TestImportsList(limit, offset, prefetch);
+                InlineResponse20024 result = apiInstance.TestImportsList(test, findingsAffected, version, branchTag, buildId, commitHash, testImportFindingActionAction, testImportFindingActionFinding, testImportFindingActionCreated, limit, offset, prefetch);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -119,6 +128,15 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **test** | **string**|  | [optional] 
+ **findingsAffected** | **string**|  | [optional] 
+ **version** | **string**|  | [optional] 
+ **branchTag** | **string**|  | [optional] 
+ **buildId** | **string**|  | [optional] 
+ **commitHash** | **string**|  | [optional] 
+ **testImportFindingActionAction** | **string**|  | [optional] 
+ **testImportFindingActionFinding** | **string**|  | [optional] 
+ **testImportFindingActionCreated** | **string**|  | [optional] 
  **limit** | **int?**| Number of results to return per page. | [optional] 
  **offset** | **int?**| The initial index from which to return the results. | [optional] 
  **prefetch** | **List&lt;string&gt;**|  | [optional] 

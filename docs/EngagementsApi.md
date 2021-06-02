@@ -1,6 +1,6 @@
 # DefectDojo.Api.EngagementsApi
 
-All URIs are relative to *https://defectdojo.office.oneshoe.nl/api/v2*
+All URIs are relative to *https://localhost:8080/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -276,7 +276,7 @@ void (empty response body)
 
 <a name="engagementsfilescreate"></a>
 # **EngagementsFilesCreate**
-> ModelFile EngagementsFilesCreate (int? id, AddNewFileOption data)
+> System.IO.Stream EngagementsFilesCreate (int? id, AddNewFileOption data)
 
 
 
@@ -305,7 +305,7 @@ namespace Example
 
             try
             {
-                ModelFile result = apiInstance.EngagementsFilesCreate(id, data);
+                System.IO.Stream result = apiInstance.EngagementsFilesCreate(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelFile**](ModelFile.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 
 <a name="engagementsfilespartialupdate"></a>
 # **EngagementsFilesPartialUpdate**
-> ModelFile EngagementsFilesPartialUpdate (int? id, AddNewFileOption data)
+> System.IO.Stream EngagementsFilesPartialUpdate (int? id, AddNewFileOption data)
 
 
 
@@ -370,7 +370,7 @@ namespace Example
 
             try
             {
-                ModelFile result = apiInstance.EngagementsFilesPartialUpdate(id, data);
+                System.IO.Stream result = apiInstance.EngagementsFilesPartialUpdate(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -391,7 +391,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelFile**](ModelFile.md)
+**System.IO.Stream**
 
 ### Authorization
 

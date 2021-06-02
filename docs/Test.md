@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **TestType** | **int?** |  | 
 **Environment** | **int?** |  | [optional] 
 **Notes** | [**List&lt;Note&gt;**](Note.md) |  | [optional] 
-**Files** | [**List&lt;ModelFile&gt;**](ModelFile.md) |  | [optional] 
+**Files** | **List&lt;System.IO.Stream&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

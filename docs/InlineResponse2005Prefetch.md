@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **DuplicateFinding** | [**Dictionary&lt;string, Finding&gt;**](Finding.md) |  | [optional] 
 **EndpointStatus** | [**Dictionary&lt;string, EndpointStatus&gt;**](EndpointStatus.md) |  | [optional] 
 **Endpoints** | [**Dictionary&lt;string, Endpoint&gt;**](Endpoint.md) |  | [optional] 
-**Files** | [**Dictionary&lt;string, ModelFile&gt;**](ModelFile.md) |  | [optional] 
+**Files** | **Dictionary&lt;string, System.IO.Stream&gt;** |  | [optional] 
 **FindingGroupSet** | [**Dictionary&lt;string, Finding&gt;**](Finding.md) |  | [optional] 
 **FoundBy** | [**Dictionary&lt;string, TestType&gt;**](TestType.md) |  | [optional] 
 **Images** | [**Dictionary&lt;string, FindingImage&gt;**](FindingImage.md) |  | [optional] 
